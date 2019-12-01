@@ -1,0 +1,13 @@
+{
+    "name": "embed-generator",
+    "version": "1.0.0",
+    "description": "extension of Cog-Creators/discord-embed-sandbox with support for webhooks",
+    "license": "MIT",
+    "author": {
+        "name": "Carter Himmel",
+        "email": "fyko@sycer.dev"
+    },
+    "contributors": [
+        "orels1 <ping@orels.sh> (https://orels.sh)"
+    ]
+}

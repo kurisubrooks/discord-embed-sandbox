@@ -1,63 +1,75 @@
-a.patreon-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    text-decoration: none;
+body {
+    background: #151515;
+    font-family: 'Roboto', sans-serif;
 }
 
-.badge-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
+.card {
+    border: 3px solid #000000;
+    border-radius: 0;
+    background: #222222;
+    color: #FFFFFF;
 }
 
-.badge-container .badge-icon {
-    background: url("https://s3.amazonaws.com/patreon_public_assets/toolbox/patreon_white.png") center center no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 20px;
+.card-header {
+    border-radius: 0 !important;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
 }
 
-.badge-container .badge-text {
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    padding: 2px;
-    color: #fff;
+.form-control {
+    background: #141414;
+    color: #FFFFFF;
+    border-radius: 0 !important;
 }
 
-.badge-container .badge-text.badge-text-bottom {
+.form-control:active,
+.form-control:focus {
+    background: #202020;
+    color: #FFFFFF;
+}
+
+#form > .form-check {
+    margin: 5px 0 15px;
+}
+
+#form .form-group:last-child {
+    margin: 0;
+}
+
+.form-group label {
+    margin: 15px 0 10px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.form-check-input {
+    margin: 0;
+}
+
+.form-check-label {
+    padding-left: 30px;
     position: relative;
-    top: -2px;
+    top: -3px;
 }
+
+/*
+  Previous code
+  removed unnecessary backwards compatibility
+*/
 
 .preview {
-    background: #36393e;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    background: #36393e;
     flex-direction: column;
 }
 
 .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     max-width: 520px;
 }
@@ -76,8 +88,6 @@ a.patreon-link {
     border-radius: 0 3px 3px 0;
     background: rgba(46, 48, 54, 0.3);
     border-color: rgba(46, 48, 54, 0.6);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 8px 10px;
     color: rgba(255, 255, 255, 0.6);
@@ -86,8 +96,6 @@ a.patreon-link {
 
 .embed .card-block {
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
 }
@@ -100,10 +108,8 @@ a.patreon-link {
     max-height: 80px;
     max-width: 80px;
     border-radius: 3px;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     width: auto;
-    -o-object-fit: contain;
     object-fit: contain;
     margin-left: 20px;
 }
@@ -121,11 +127,7 @@ a.patreon-link {
 }
 
 .embed .embed-inner .embed-author {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 5px;
 }
@@ -134,7 +136,6 @@ a.patreon-link {
     margin-right: 9px;
     width: 20px;
     height: 20px;
-    -o-object-fit: contain;
     object-fit: contain;
     border-radius: 50%;
 }
@@ -147,22 +148,13 @@ a.patreon-link {
 }
 
 .embed .embed-inner .fields {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    box-lines: miltiple;
     margin-top: -10px;
 }
 
 .embed .embed-inner .fields .field {
-    -webkit-box-flex: 0;
-    -ms-flex: 0;
     flex: 0;
     box-flex: 1;
     padding-top: 10px;
@@ -172,11 +164,8 @@ a.patreon-link {
 
 .embed .embed-inner .fields .field.inline {
     box-flex: 1;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     min-width: 150px;
-    -ms-flex-preferred-size: auto;
     flex-basis: auto;
 }
 
